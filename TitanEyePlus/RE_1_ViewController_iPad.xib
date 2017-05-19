@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RE_1_ViewController">
+            <connections>
+                <outlet property="dlabel" destination="KDj-iv-OfN" id="6og-Px-fhp"/>
+                <outlet property="slider" destination="8ku-7C-yYy" id="nA7-j2-LEX"/>
+                <outlet property="view" destination="2" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="cover-right.png" translatesAutoresizingMaskIntoConstraints="NO" id="187">
+                    <rect key="frame" x="643" y="0.0" width="381" height="768"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="381" id="238"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="568" translatesAutoresizingMaskIntoConstraints="NO" id="303">
+                    <rect key="frame" x="34" y="91" width="568" height="102"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="102" id="307"/>
+                        <constraint firstAttribute="width" constant="568" id="308"/>
+                    </constraints>
+                    <string key="text">Now cover your Right Eye and read the chart with your left eye. Select the direction button according to the direction of letter E (direction of the 3 arms of the letter E like whether it is facing to the left, right, up or down) at each letter size.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXAMINE YOUR LEFT EYE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="304">
+                    <rect key="frame" x="34" y="67" width="233" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="305"/>
+                        <constraint firstAttribute="width" constant="233" id="306"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="1" green="0.1983915034" blue="0.071082255989999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="24" minValue="0.0" maxValue="48" translatesAutoresizingMaskIntoConstraints="NO" id="8ku-7C-yYy">
+                    <rect key="frame" x="17" y="709" width="600" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="minimumTrackTintColor" red="1" green="0.43921571970000001" blue="0.20392158630000001" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="maximumTrackTintColor" red="0.47058826679999999" green="0.99607849120000003" blue="0.43137258290000002" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="thumbTintColor" red="1" green="0.98533195600000001" blue="0.24386537110000001" alpha="1" colorSpace="calibratedRGB"/>
+                </slider>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Too Close" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0XW-1B-nSg">
+                    <rect key="frame" x="19" y="748" width="77" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Too Far" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BA7-Z5-N5x">
+                    <rect key="frame" x="557" y="743" width="58" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Look the Device" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDj-iv-OfN">
+                    <rect key="frame" x="261" y="744" width="118" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="187" firstAttribute="top" secondItem="2" secondAttribute="top" id="234"/>
+                <constraint firstAttribute="bottom" secondItem="187" secondAttribute="bottom" id="235"/>
+                <constraint firstAttribute="trailing" secondItem="187" secondAttribute="trailing" id="237"/>
+                <constraint firstItem="304" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="34" id="316"/>
+                <constraint firstItem="304" firstAttribute="top" secondItem="2" secondAttribute="top" constant="67" id="318"/>
+                <constraint firstItem="303" firstAttribute="leading" secondItem="304" secondAttribute="leading" id="319"/>
+                <constraint firstItem="303" firstAttribute="top" secondItem="2" secondAttribute="top" constant="91" id="320"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cover-right.png" width="353" height="528"/>
+    </resources>
+</document>
